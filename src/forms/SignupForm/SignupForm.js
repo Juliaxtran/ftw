@@ -5,7 +5,7 @@ import { FormattedMessage, injectIntl, intlShape } from '../../util/reactIntl';
 import { Form as FinalForm } from 'react-final-form';
 import classNames from 'classnames';
 import * as validators from '../../util/validators';
-import { Form, PrimaryButton, FieldTextInput } from '../../components';
+import { Form, PrimaryButton, FieldTextInput, FieldPhoneNumberInput } from '../../components';
 
 import css from './SignupForm.module.css';
 
@@ -111,6 +111,18 @@ const SignupFormComponent = props => (
       const submitInProgress = inProgress;
       const submitDisabled = invalid || submitInProgress;
 
+      // phone number
+      const phoneLabel = intl.formatMessage({
+        id: 'SignupForm.phoneLabel',
+      });
+      const phonePlaceholder = intl.formatMessage({
+        id: 'SignupForm.phonePlaceholder',
+      });
+      const phoneRequiredMessage = intl.formatMessage({
+        id: 'SignupForm.phoneRequired',
+      });
+      const phoneRequired = validators.required(phoneRequiredMessage);
+
       const handleTermsKeyUp = e => {
         // Allow click action with keyboard like with normal links
         if (e.keyCode === KEY_CODE_ENTER) {
@@ -163,6 +175,15 @@ const SignupFormComponent = props => (
                 validate={lastNameRequired}
               />
             </div>
+            <FieldPhoneNumberInput
+              className={css.phone}
+              id={formId ? `${formId}.phoneNumber` : 'phoneNumber'}
+              name="phoneNumber"
+              label={phoneLabel}
+              placeholder={phonePlaceholder}
+              validate={phoneRequired}
+            />
+
             <FieldTextInput
               className={css.password}
               type="password"
@@ -174,6 +195,8 @@ const SignupFormComponent = props => (
               validate={passwordValidators}
             />
           </div>
+
+
 
           <div className={css.bottomWrapper}>
             <p className={css.bottomWrapperText}>
