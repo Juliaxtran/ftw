@@ -16,9 +16,9 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #2f880a;
-  --marketplaceColorLight: #39a10c;
-  --marketplaceColorDark: #287209;
+  --marketplaceColor: #6f1616;
+  --marketplaceColorLight: #c44a4a;
+  --marketplaceColorDark: #cd1b1b;
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23c0392b;
@@ -109,7 +109,7 @@
 
   /* ================ Modal default padding ================ */
 
-  --modalPadding: 24px 24px 48px 24px;
+  --modalPadding: -px 24px 48px 24px;
   --modalPaddingMedium: 55px 60px 55px 60px;
 
   /* ================ LocationAutocompleteInput bottom attribution padding ================ */
@@ -431,6 +431,8 @@ select {
 
   /* Background */
   background-image: url('data:image/svg+xml;utf8,<svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg"><path d="M6.53 7.472c.26.26.68.26.94 0l5.335-5.333c.26-.263.26-.684 0-.944-.26-.26-.683-.26-.943 0L7 6.056l-4.862-4.86c-.26-.26-.683-.26-.943 0-.26.26-.26.68 0 .943L6.53 7.47z" stroke="%234A4A4A" fill="%234A4A4A" fill-rule="evenodd"/></svg>');
+  padding: 0;
+  margin: 0;
   background-size: 16px 16px;
   background-position: center right;
 
@@ -559,7 +561,7 @@ textarea {
 
 .marketplaceHeroTitleFontStyles {
   font-weight: var(--fontWeightBold);
-  font-size: 36px;
+  font-size: 50px;
   line-height: 36px;
   letter-spacing: -0.7px;
   /* margin-top + n * line-height + margin-bottom => x * 6px */
