@@ -135,7 +135,7 @@
 
   /* ================ SectionHero ================ */
 
-  --SectionHero_desktopTitleMaxWidth: 625px;
+  --SectionHero_desktopTitleMaxWidth: 100%;
 
   /* ================ TabNav ================ */
   --TabNav_linkWidth: 240px;

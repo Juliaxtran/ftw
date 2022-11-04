@@ -3,6 +3,7 @@
 /* Desktop */
 .root {
   /* Size */
+
   width: 100%;
   height: var(--topbarHeightDesktop);
 
@@ -14,10 +15,10 @@
   padding: 0 12px 0 0;
 
   /* fill */
-  background-color: var(--matterColorLight);
+  background-color:rgb(0, 0, 0);
 
   /* shadows */
-  box-shadow: var(--boxShadowLight);
+  box-shadow:  white;
 
   @media (--viewportLarge) {
     padding: 0 24px 0 0;
@@ -45,7 +46,8 @@
 
 .logo {
   /* If height is increased, change link paddings accordingly */
-  height: 27px;
+  height: 45px;
+
 
   /* Good aspect ratio should be less than 160/27 (width/height) */
   /* NOTE: extremely wide logos, need special handling. */
@@ -53,6 +55,7 @@
   max-width: 220px;
   object-fit: contain;
   object-position: left center;
+
 }
 
 /* Search */
@@ -74,7 +77,7 @@
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0;
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 
   display: inline-block;
   margin: 28px 0;
@@ -88,6 +91,7 @@
 .topbarSearchWithLeftPadding {
   padding-left: 24px;
   height: var(--topbarHeightDesktop);
+
 
   @media (--viewportLarge) {
     padding-left: 34px;
@@ -107,7 +111,7 @@
   flex-shrink: 0;
   height: 100%;
   padding: 0 12px 0 12px;
-  color: var(--marketplaceColor);
+  color: var(--matterColorLight);
   margin-top: 0;
   margin-bottom: 0;
 
@@ -256,7 +260,7 @@
   height: 100%;
   padding: 0 12px 0 12px;
 
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 
   &:hover {
     color: var(--matterColorDark);
@@ -274,7 +278,7 @@
   height: 100%;
   padding: 0 12px 0 12px;
 
-  color: var(--matterColor);
+  color: var(--matterColorLight);
 
   &:hover {
     color: var(--matterColorDark);
