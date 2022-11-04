@@ -1,8 +1,20 @@
 @import '../../styles/customMediaQueries.css';
 
+
+.howItWorks {
+
+  height: 100%;
+  padding: 2em;
+  background-color: var(--marketplaceColor);
+}
+
 .title {
   composes: h1 from global;
   margin-top: 0;
+  color: white;
+  display: flex;
+  gap: 1em
+
 }
 
 .steps {
@@ -10,6 +22,7 @@
   flex-direction: column;
 
   @media (--viewportMedium) {
+
     flex-direction: row;
   }
 }
@@ -30,6 +43,7 @@
 .stepTitle {
   margin-top: 18px;
   margin-bottom: 18px;
+  color: white;
 
   @media (--viewportMedium) {
     margin-top: 21px;
@@ -37,8 +51,11 @@
   }
 }
 
+
+
 .createListingLink {
   margin-top: 18px;
+
 
   @media (--viewportMedium) {
     margin-top: 24px;

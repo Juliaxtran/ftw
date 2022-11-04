@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
+import logo from './logo.png';
 
 import { NamedLink } from '../../components';
 
@@ -12,11 +13,15 @@ const SectionHowItWorks = props => {
 
   const classes = classNames(rootClassName || css.root, className);
   return (
-    <div className={classes}>
+    <div className={css.howItWorks}>
       <div className={css.title}>
+      <img src={logo} alt="logo" width='100px'/>
+      <div className={css.titleText}>
         <FormattedMessage id="SectionHowItWorks.titleLineOne" />
         <br />
         <FormattedMessage id="SectionHowItWorks.titleLineTwo" />
+        </div>
+
       </div>
 
       <div className={css.steps}>
@@ -40,7 +45,8 @@ const SectionHowItWorks = props => {
 
         <div className={css.step}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part3Title" />
+            <FormattedMessage
+            id="SectionHowItWorks.part3Title" />
           </h2>
           <p>
             <FormattedMessage id="SectionHowItWorks.part3Text" />
