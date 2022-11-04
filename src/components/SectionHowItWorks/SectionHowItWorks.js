@@ -18,8 +18,8 @@ const SectionHowItWorks = props => {
       <img src={logo} alt="logo" width='100px'/>
       <div className={css.titleText}>
         <FormattedMessage id="SectionHowItWorks.titleLineOne" />
-        <br />
-        <FormattedMessage id="SectionHowItWorks.titleLineTwo" />
+      
+
         </div>
 
       </div>

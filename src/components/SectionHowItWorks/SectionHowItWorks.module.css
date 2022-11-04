@@ -13,8 +13,14 @@
   margin-top: 0;
   color: white;
   display: flex;
-  gap: 1em
+  gap: 1em;
+  align-items: center;
+}
 
+@media screen and (--viewportSmall) {
+  .titleText {
+    display: none;
+  }
 }
 
 .steps {
