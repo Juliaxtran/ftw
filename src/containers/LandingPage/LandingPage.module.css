@@ -33,6 +33,7 @@
 .hero {
   flex-grow: 1;
   padding-bottom: 32px;
+  padding-top: 10em;
 
   @media (--viewportMedium) {
     padding-bottom: 83px;
