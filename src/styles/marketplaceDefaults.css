@@ -16,9 +16,9 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #6f1616;
+  --marketplaceColor: #c43d3d;
   --marketplaceColorLight: #c44a4a;
-  --marketplaceColorDark: #cd1b1b;
+  --marketplaceColorDark: #6a0e0e;
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23c0392b;
@@ -33,7 +33,7 @@
   --bannedColorDark: var(--marketplaceColor);
 
   --matterColorDark: #000000;
-  --matterColor: #dcd5d5;
+  --matterColor: #000000;
   --matterColorAnti: #b2b2b2;
   --matterColorNegative: #e7e7e7;
   --matterColorBright: #fcfcfc;
