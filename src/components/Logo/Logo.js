@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import config from '../../config';
-import MobileLogoImage from './cottagedays-logo-small.png';
-import DesktopLogoImage from './cottagedays-logo.png';
+import MobileLogoImage from './logo-small.png';
+import DesktopLogoImage from './logo-beta.png';
 import css from './Logo.module.css';
 
 const Logo = props => {
